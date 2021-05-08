@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Example</title>
+</head>
+<body>
+    <h1>Example</h1>
+    <ul></ul>
+    <script>
+        const electron = require('electron');
+        const {ipcRenderer} = electron;
+        const ul = document.querySelector('ul');
+        ipcRenderer.on('data:import', function(e, data){
+            const li = document.createElement('li');
+            const itemTest = document.createTextNode(data);
+            li.appendChild(itemTest);
+            ul.appendChild(li);
+        })
+    </script>
+</body>
+</html>
