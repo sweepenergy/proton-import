@@ -1,0 +1,16 @@
+{
+  "name": "example_project",
+  "version": "1.0.0",
+  "description": "shop list",
+  "main": "main",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "electron": "^12.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Anlerew",
+  "license": "MIT"
+}
